@@ -1,0 +1,57 @@
+/* Website by Parliamo: https://parliamo.me */
+
+@keyframes appear-immediately {
+    from {
+        opacity: 0;
+        padding-top: 30px;
+    }
+    to {
+        opacity: 1;
+        padding-top: 0;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        padding-top: 30px;
+    }
+    60% {
+        opacity: 0;
+        padding-top: 30px;
+    }
+    to {
+        opacity: 1;
+        padding-top: 0;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        user-focus: none;
+        user-select: none;
+        cursor: default;
+    }
+    60% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        user-focus: all;
+        user-select: all;
+        cursor: pointer;
+    }
+}
+
+@keyframes enable-scroll {
+    from {
+        overflow-y: hidden;
+    }
+    50% {
+        overflow-y: hidden;
+    }
+    to {
+        overflow-y: scroll;
+    }
+}

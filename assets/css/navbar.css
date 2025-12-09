@@ -1,0 +1,122 @@
+/* Website by Parliamo: https://parliamo.me */
+
+nav.navbar, footer {
+    background-color: #111417;
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(23, 23, 39, 0.5), 0 0 10px #000000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav.navbar {
+    position: fixed;
+    z-index: 10;
+}
+
+div.nav-links, a#menu_button {
+    text-align: right;
+    width: 100%;
+}
+
+div.nav-links a {
+    animation: fade 3s forwards;
+    tab-index: -1;
+}
+
+div.nav-links > a, div.nav-overlay > a {
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    text-decoration: none;
+}
+
+div.nav-links > a:hover, div.nav-overlay > a:hover {
+    background-color: #21252c;
+    text-shadow: 0 0 3px #ffffff;
+}
+
+a#nav-logo > img {
+    max-width: 48px;
+    max-height: 48px;
+}
+
+nav.navbar a#menu_button, div.nav-overlay a#close_button {
+    font-size: 36px;
+    cursor: pointer;
+}
+
+nav.navbar a, div.nav-links a {
+    height: max-content;
+}
+
+
+
+/* Footer */
+
+footer {
+    bottom: 0;
+    margin-top: 5vh;
+}
+
+footer p {
+    width: 100%;
+    text-align: center;
+}
+
+/* Overlay */
+
+nav.navbar a#menu_button {
+    display: none;
+    animation: fade 3s forwards;
+}
+
+div.nav-overlay {
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #111417;
+    transition: 1s ease;
+    z-index: 11;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    max-width: 100%;
+    overflow-y: scroll;
+}
+
+div.nav-overlay[open] {
+    top: 0;
+}
+
+div.overlay-header {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+div.nav-overlay a#close_button {
+    float: right;
+    width: max-content;
+}
+
+a#ol-logo > img {
+    max-width: 128px;
+    max-height: 128px;
+}
+
+div.nav-overlay hr {
+    color: #dadada;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+a.overlay-link {
+    width: 100%;
+    text-align: center;
+}

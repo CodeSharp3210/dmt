@@ -1,0 +1,32 @@
+/* Website by Parliamo: https://parliamo.me */
+
+@media screen and (max-width: 740px) {
+    h1.title {
+        font-size: 10vw;
+        margin-bottom: 8vh;
+    }
+
+    div.table {
+        display: block;
+        width: 100%;
+    }
+
+    div.table div {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-bottom: 40px;
+    }
+
+    div.cell {
+        flex: 1;
+    }
+
+    div.nav-links {
+        display: none;
+    }
+
+    nav.navbar a#menu_button {
+        display: block;
+    }
+}
