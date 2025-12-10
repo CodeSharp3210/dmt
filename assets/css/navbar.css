@@ -22,7 +22,6 @@ div.nav-links, a#menu_button {
 
 div.nav-links a {
     animation: fade 3s forwards;
-    tab-index: -1;
 }
 
 div.nav-links > a, div.nav-overlay > a {
@@ -35,6 +34,10 @@ div.nav-links > a, div.nav-overlay > a {
 div.nav-links > a:hover, div.nav-overlay > a:hover {
     background-color: #21252c;
     text-shadow: 0 0 3px #ffffff;
+}
+
+a#nav-logo:focus {
+    box-shadow: none;
 }
 
 a#nav-logo > img {
